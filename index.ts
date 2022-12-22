@@ -26,7 +26,7 @@ async function reqHandler(req: Request, conn: ConnInfo) {
   if (path == "/json/expresion_regular_v1") {
     const data_work = await getJson("./data1.json");    //console.log(d);  
     return new Response(JSON.stringify(data_work));
-  }else if (path == "/json/codigo_de_proceso_v1") {
+  }else if (path == "/json/codigo_de_proceso_v1.json") {
     const data_work = await getJson("./CodigoDeProceso.json");     
     return new Response(JSON.stringify(data_work));
   }else{
