@@ -1,5 +1,5 @@
 {
-    "RETIROS_/_AVANCES": [
+    "RETIROS_AVANCES": [
         {
             "011000": "Cuenta de ahorros.",
             "012000": "Cuenta Corriente",
@@ -32,7 +32,7 @@
             "202010": "Transferencias Corriente – Ahorros"
         }
     ],
-    "DEPOSITOS": [
+    "DEPOSITOS_CUENTA": [
         {
             "211000": "Depósitos cuenta de Ahorros",
             "212000": "Depósitos cuenta Corriente"
@@ -60,16 +60,16 @@
             "244200": "Motos y Vehículos"
         }
     ],
-    "DEPOSITOS": [
+    "DEPOSITOS_EN_CHEQUE": [
         {
             "272000": "Depósito en cheque-Pago Cr Hip",
             "272010": "Depósito en cheque-Cta. Aho.",
             "272020": "Depósito en cheque-Cta. Cte.",
             "272030": "Depósito en cheque-Tarj. Cre.",
-            "272030": "Depósito en cheque-Cre. Rot."
+            "272040": "Depósito en cheque-Cre. Rot."
         }
     ],
-    "DEPOSITOS": [
+    "DEPOSITOS_ENTRE_CUENTAS": [
         {
             "401014": "Depósito de cuenta ahorros a cuenta ahorros",
             "401024": "Depósito de cuenta ahorros a cuenta corriente",
@@ -263,7 +263,7 @@
             "913030": "Tarjeta Crédito."
         }
     ],
-    "CAMBIO_DE_CHEQUES/_REVERSO_CAMBIO_DE_CHEQUES": [
+    "CAMBIO_DE_CHEQUES_REVERSO_CAMBIO_DE_CHEQUES": [
         {
             "922000": "Cambio de cheques  "
         }
