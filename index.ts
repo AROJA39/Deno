@@ -1,4 +1,5 @@
-import {serve} from "https://deno.land/std/http/mod.ts";
+import { serve } from "https://deno.land/std/http/mod.ts";
+
 console.log(Deno.args[0]);
 let port_listen: number;
 port_listen = parseInt(Deno.args[0]);
@@ -12,8 +13,7 @@ async function getJson(filePath: string) {
   return JSON.parse(await Deno.readTextFile(filePath));
 }
 
-async function reqHandler(req: Request, conn: ConnInfo) {
-    
+async function reqHandler(req: Request, conn: ConnInfo) {  
   if (req.method !== "GET") {
     return new Response(null, { status: 405 });
   }
@@ -21,7 +21,7 @@ async function reqHandler(req: Request, conn: ConnInfo) {
   const { pathname: path } = new URL(req.url);
 
   if (path == "/json/expresion_regular_v1") {
-    const data_work = await getJson("./data1.json");    //console.log(d);  
+    const data_work = await getJson("./data1.json");    
     return new Response(JSON.stringify(data_work));
   }else if (path == "/json/codigo_de_proceso_v1.json") {
     const data_work = await getJson("./CodigoDeProceso.json");     
