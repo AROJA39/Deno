@@ -26,6 +26,9 @@ async function reqHandler(req: Request, conn: ConnInfo) {
   }else if (path == "/json/codigo_de_proceso_v1.json") {
     const data_work = await getJson("./CodigoDeProceso.json");     
     return new Response(JSON.stringify(data_work));
+  }else if (path == "/json/dias_habiles_v1.json") {
+    const data_work = await getJson("./DiasHabiles.json");     
+    return new Response(JSON.stringify(data_work));
   }else{
     return new Response(null, { status: 404 });
   }
